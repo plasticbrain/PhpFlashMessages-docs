@@ -147,11 +147,11 @@ require 'header.php';
         }
 
         // Check if there are any of a specific type of messages
-        if ($msg->hasMessage($msg::INFO)) {
+        if ($msg->hasMessages($msg::INFO)) {
             ...
         }
 
-        if ($msg->hasMessage($msg::SUCCESS)) {
+        if ($msg->hasMessages($msg::SUCCESS)) {
             ...
         }
 
@@ -206,22 +206,22 @@ require 'header.php';
         <p>Check to see if there are any specific message types (or any messages at all) queued.</p>
         <pre class="brush:php">
         // Check if there are any INFO messages
-        if ($msg->hasMessage($msg::INFO)) {
+        if ($msg->hasMessages($msg::INFO)) {
             ...
         }
 
         // Check if there are any SUCCESS messages
-        if ($msg->hasMessage($msg::SUCCESS)) {
+        if ($msg->hasMessages($msg::SUCCESS)) {
             ...
         }
 
         // Check if there are any WARNING messages
-        if ($msg->hasMessage($msg::WARNING)) {
+        if ($msg->hasMessages($msg::WARNING)) {
             ...
         }
 
         // Check if there are any ERROR messages
-        if ($msg->hasMessage($msg::ERROR)) {
+        if ($msg->hasMessages($msg::ERROR)) {
             ...
         }
 
